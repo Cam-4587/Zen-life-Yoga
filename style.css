@@ -186,29 +186,91 @@ footer {
 .contact-info p{
     font-size:1.2em;
 }
+
 /*Yoga Card Section*/
+.yoga-card-header{
+    background-color:#c8fcaf;
+}
+
+.yoga-card{
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.card-title{
+    text-decoration: underline;
+    font-weight: 700;
+    padding:10px;
+}
 
 .yoga-card-row{
     display:flex;
     gap:20px;
     margin-bottom:20px;
-}
-.yoga-card{
-    padding:20px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.6);
-    background-color: linear-gradient(top, lightgreen, lightgreen 20%, transparent 70%, transparent 100%);
+    padding:0 30px;
 }
 
-.yoga-title{
-    text-decoration: underline;
-    font-weight: 700;
+.yoga-section-title{
+    font-family: "Merienda", serif;
+    font-weight:700;
+    text-decoration:underline;
+    margin-top:10px;
+}
+
+.yoga-card-section{
+    background-color: #f5f7f4;
     padding:10px;
-}
-.card-header{
-    background-color:#c8fcaf;
-    margin-bottom:10px;
+    margin:10px;
+    border-radius:5%;
 }
 
+/* Subscribe section*/
+
+.subscribe-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+    padding: 50px;
+    text-align: center;
+    max-width: 400px;
+    font-family: Arial, sans-serif;
+}
+
+.subscribe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-input{
+    width: 65%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.subscribe-button {
+    background-color: crimson;
+    color: #fff;
+    padding: 10px 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #65686b;
+}
 /*Media queries for mobile styling*/
 
 @media only screen and (max-width: 992px) {
@@ -248,9 +310,12 @@ footer {
     .contact-info{
         margin-top:10px;
     }
-
     .yoga-card-row{
         flex-direction: column;
     }
-
+    .testimonial-row{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
 }
