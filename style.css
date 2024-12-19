@@ -271,6 +271,7 @@ footer {
 .subscribe-button:hover {
     background-color: #65686b;
 }
+
 /*Media queries for mobile styling*/
 
 @media only screen and (max-width: 992px) {
@@ -312,10 +313,5 @@ footer {
     }
     .yoga-card-row{
         flex-direction: column;
-    }
-    .testimonial-row{
-        display:flex;
-        flex-direction:column;
-        align-items: center;
     }
 }
